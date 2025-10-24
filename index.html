@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>9-Day Study Plan Checklist (24 Oct – 1 Nov)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>9-Day Study Plan Checklist (MTE Exam: 2 Nov)</h1>
+      <p class="subtitle">24 Oct → 1 Nov — 3 sessions/day (3 hrs each = 9 hrs/day). Tick items as you complete them.</p>
+    </header>
+
+    <main>
+      <section id="controls" class="card">
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <div id="progress">Progress: 0 / 0 (0%)</div>
+          <div class="btns">
+            <button id="expandAll">Expand All</button>
+            <button id="collapseAll" class="secondary">Collapse All</button>
+            <button id="exportBtn">Export JSON</button>
+            <button id="importBtn">Import JSON</button>
+            <input id="importFile" type="file" accept="application/json" style="display:none" />
+            <button id="resetBtn">Reset All</button>
+          </div>
+        </div>
+        <div id="coverageReport" style="margin-top:10px;color:#333"></div>
+      </section>
+
+      <section id="checklist"></section>
+    </main>
+
+    <footer>
+      <small>Local-only storage (saved in your browser). Use export to back up progress.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
